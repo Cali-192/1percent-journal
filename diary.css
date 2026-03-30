@@ -542,6 +542,123 @@ body {
   font-weight: 400; line-height: 1.82; color: var(--muted);
 }
 
+/* Stili i ripërpunuar për Seksionin e Rrjetit 1% (Përshtatur me journal.ensargashi.com) */
+.community-exclusive {
+    background-color: #111111; /* Ngjyra e sfondit të hirtë të errët, si në faqen tënde */
+    padding: 100px 20px;
+    text-align: center;
+    border-top: 1px solid #222222; /* Kufiri pak më i hapur për kontrast */
+    /* Fonti: Përdor 'Poppins' ose 'Inter' nëse i ke të ngarkuar, përndryshe sans-serif */
+    font-family: 'Poppins', 'Inter', -apple-system, sans-serif; 
+}
+
+.community-container {
+    max-width: 850px; /* Pak më i gjerë për t'u përshtatur me hapësirën tënde */
+    margin: 0 auto;
+}
+
+/* Titulli i vogël (ari/kafe e lehtë) sipër titullit kryesor, si në faqen tënde */
+.community-exclusive::before {
+    content: "KOMUNITETI EKSKLUZIV";
+    display: block;
+    color: #c4a77d; /* Ngjyra ari/kafe e lehtë për titujt e vegjël */
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.community-title {
+    color: #ffffff; /* Teksti kryesor i bardhë */
+    font-size: 42px; /* Madhësia e titullit kryesor, ngjashëm me "Pyetjet e Shpeshta" */
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: none;
+    line-height: 1.2;
+}
+
+.community-description {
+    color: #cccccc; /* Teksti i përshkrimit i hirtë i hapur për lexueshmëri */
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+/* Theksimi i fjalëve kyçe në të bardhë */
+.community-description strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.community-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Butoni (Përshtatur me stilin e butonit "POROSIT TANI") */
+.cta-button-whatsapp {
+    background-color: #ffffff; /* Sfondi i bardhë për butonin */
+    color: #000000; /* Teksti i zi brenda butonit */
+    padding: 18px 45px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px; /* Kufijtë pak të rrumbullakosur */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase; /* Shkronja të mëdha për butonin */
+    letter-spacing: 1px;
+}
+
+.cta-button-whatsapp:hover {
+    background-color: #f2f2f2; /* Ngjyra e hirtë shumë e hapur në hover */
+    transform: translateY(-3px); /* Lëvizja dramatike lart */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Hija në hover */
+}
+
+.cta-button-whatsapp .arrow {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.cta-button-whatsapp:hover .arrow {
+    transform: translateX(6px); /* Shigjeta lëviz djathtas */
+}
+
+/* Shënimi i verifikimit (I hirtë i errët) */
+.verification-note {
+    color: #666666; /* Ngjyra e hirtë e errët */
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Përshtatja për Mobil */
+@media (max-width: 768px) {
+    .community-exclusive {
+        padding: 70px 20px;
+    }
+    .community-title {
+        font-size: 32px;
+    }
+    .community-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .cta-button-whatsapp {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 30px;
+    }
+}
 
 /* ════════════════════════════════════════════════════════
    FOOTER
